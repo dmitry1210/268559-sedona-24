@@ -33,8 +33,38 @@
   			<span>
   				<a class="button" href="#">Поиск гостиницы в Седоне</a>
   			</span>
+      </section>
+
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search" method="get" action="https://echohtmlacademy.ru">
+          <div class="check-in-date">
+            <label class="visually-hidden" for="check-in-date">Дата заезда:</label>
+            <input id="check-in-date" type="date" name="date">
+            <a class="button" href="#">
+              <img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
+            </a>
+          </div>
+          <div class="check-out-date">
+            <label class="visually-hidden" for="check-out-date">Дата выезда:</label>
+            <input id="check-out-date" type="date" name="date">
+            <a class="button" href="#">
+              <img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
+            </a>
+          </div>
+          <div class="adults">
+            <label class="visually-hidden" for="adults">Взрослые</label>
+            <input type="number" min="1" max="2" step="1" id="adults" name="adults">
+          </div>
+          <div class="children">
+            <label class="visually-hidden" for="children">Дети</label>
+            <input type="number" min="1" max="2" step="1" id="children" name="children">
+          </div>
+          <button type="submit" class="hotel-search button">Найти</button>
+        </form>
   		</section>
   	</main>
+
   	<footer>
   		<p class="footer-hash-tag">#VISITSEDONA</p>
   		<div class="footer-social">
