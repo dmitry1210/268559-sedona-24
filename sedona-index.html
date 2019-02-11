@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -22,8 +25,8 @@
 
   	<main>
   		<section class="welcome">
-  			<h1>Седона - небольшой городок в Аризоне,<br>
-  			заслуживающий большего!</h1>
+  			<h2>Седона - небольшой городок в Аризоне,<br>
+  			заслуживающий большего!</h2>
   			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   		</section>
 
@@ -36,39 +39,39 @@
       </section>
 
       <section class="modal modal-search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <form class="hotel-search" method="get" action="https://echohtmlacademy.ru">
-          <div class="check-in-date">
-            <label class="visually-hidden" for="check-in-date">Дата заезда:</label>
-            <input id="check-in-date" type="date" name="date">
-            <button class="calendar-button">
-              <img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
-            </button>
-          </div>
-          <div class="check-out-date">
-            <label class="visually-hidden" for="check-out-date">Дата выезда:</label>
-            <input id="check-out-date" type="date" name="date">
-            <button class="calendar-button">
-              <img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
-            </button>
-          </div>
-          <div class="adults">
-            <label class="visually-hidden" for="adults">Взрослые</label>
-            <input type="number" min="1" max="2" step="1" id="adults" name="adults">
-          </div>
-          <div class="children">
-            <label class="visually-hidden" for="children">Дети</label>
-            <input type="number" min="1" max="2" step="1" id="children" name="children">
-          </div>
-          <button type="submit" class="hotel-search button">Найти</button>
-        </form>
+       	<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+         	<form class="hotel-search" method="get" action="https://echohtmlacademy.ru">
+         		<div class="check-in-date">
+           		<label class="visually-hidden" for="check-in-date">Дата заезда:</label>
+           		<input id="check-in-date" type="date" name="date">
+           		<button class="calendar-button">
+           			<img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
+           		</button>
+         		</div>
+          	<div class="check-out-date">
+            	<label class="visually-hidden" for="check-out-date">Дата выезда:</label>
+            	<input id="check-out-date" type="date" name="date">
+            	<button class="calendar-button">
+              	<img src="img/calendar-icon.svg" width="21" height="22" alt="Календарь дат">
+            	</button>
+          	</div>
+          	<div class="adults">
+            	<label class="visually-hidden" for="adults">Взрослые</label>
+            	<input type="number" min="1" max="2" step="1" id="adults" name="adults">
+          	</div>
+          	<div class="children">
+            	<label class="visually-hidden" for="children">Дети</label>
+            	<input type="number" min="1" max="2" step="1" id="children" name="children">
+          	</div>
+          	<button type="submit" class="button hotel-search">Найти</button>
+        	</form>
   		</section>
   	</main>
 
-  	<footer>
+  	<footer class="footer">
   		<p class="footer-hash-tag">#VISITSEDONA</p>
   		<div class="footer-social">
-  			<ul>
+  			<ul class="social-navigation">
   				<li><a class="social-button" href="#">Твиттер</a></li>
   				<li><a class="social-button" href="#">Фэйсбук</a></li>
   				<li><a class="social-button" href="#">Ютуб</a></li>
