@@ -2,14 +2,14 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
 
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -61,6 +61,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	margin: 0;
 }
 
 .welcome p {
@@ -68,13 +69,15 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
+	margin: 0;
 }
 
-.interested h1 {
+.interested h2 {
 	color: #000000;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
+	margin: 0;
 }
 
 .interested p {
@@ -82,6 +85,7 @@ a {
 	font-size: 21px;
 	line-height: 24px;
 	font-weight: 400;
+	margin: 0;
 }
 
 .interested a {
@@ -186,7 +190,6 @@ a {
 	background-color: #f2f2f2;
 }
 
-
 .footer {
 	color: #ffffff;
 	opacity: 0.9;
@@ -217,4 +220,106 @@ a {
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
+}
+
+.main-container {
+	width: 1200px;
+	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-header-wrapper {
+	background-image: url("../img/welcome.svg"), url("../img/background_photo.jpg");
+	height: 785px;
+	background-position: 370px 132px, 100%;
+	background-size: auto, cover;
+	background-repeat: no-repeat;
+}
+
+.main-header-wrapper .logo {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	top: 0;
+}
+
+.navigation {
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.site-navigation li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.grand-canyon-sucks {
+	/*
+	padding: 76px 370px 0 370px;
+	*/
+	margin-top: 76px;
+	padding: 0 370px 0 370px;
+	margin-bottom: 21px;
+}
+
+.photo-mask {
+	background-image: url("../img/background_photo_mask.svg");
+	height: 59px;
+	width: 1200px;
+	background-position: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.welcome {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+.interested {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+
+}
+
+.hotels-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hotels {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 1200px;
+	background-color: #ffffff;
+	outline: 1px solid #f2f2f2;
 }
