@@ -121,14 +121,6 @@ a {
 	line-height: 26px;
 }
 
-/*
-.catalog-item a:focus {
-	color: #ffffff;
-	opacity: 0.3;
-}
-
-*/
-
 .button-info {
 	color: #ffffff;
 	font-size: 14px;
@@ -230,18 +222,13 @@ a {
 }
 
 .main-header-wrapper {
-	background-image: url("../img/welcome.svg"), url("../img/background_photo.jpg");
-	height: 785px;
-	background-position: 370px 132px, 100%;
-	background-size: auto, cover;
-	background-repeat: no-repeat;
+	position: relative;
 }
 
 .main-header-wrapper .logo {
 	position: absolute;
-	left: 50%;
-	bottom: 0;
-	top: 0;
+	top: -1px;
+	left: 530px;
 }
 
 .navigation {
@@ -253,33 +240,40 @@ a {
 	padding: 0;
 	list-style: none;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
 .site-navigation li {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	display: flex;
+}
+
+.site-navigation li:nth-child (1) {
+	align-self: flex-start;
+}
+
+.site-navigation li:nth-child (2) {
+	align-self: flex-start;
+}
+
+.second-header-wrapper {
+	background-image: url("../img/background_photo.jpg");
+	height: 508px;
 }
 
 .grand-canyon-sucks {
-	/*
 	padding: 76px 370px 0 370px;
-	*/
-	margin-top: 76px;
-	padding: 0 370px 0 370px;
-	margin-bottom: 21px;
 }
 
 .photo-mask {
-	background-image: url("../img/background_photo_mask.svg");
 	height: 59px;
-	width: 1200px;
-	background-position: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("../img/intro-mask.svg");
+	padding: 0px;
 	margin: 0;
-	padding: 0;
 }
 
 .welcome {
