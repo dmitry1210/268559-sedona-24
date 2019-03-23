@@ -1,14 +1,12 @@
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
-
 	background-color: #f2f2f2;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -239,10 +237,6 @@ padding-bottom: 53px;
 	background-color: #503e33;
 }
 
-.modal {
-/*	display: none; */
-}
-
 .main-container {
 	width: 1200px;
 	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
@@ -262,6 +256,7 @@ padding-bottom: 53px;
 
 .second-header-wrapper {
 	height: 508px;
+	background-color: #dbe9f2;
 	background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
 	background-position: 0 451px, 0 -83px;
 	background-size:1200px, 1200px;
@@ -306,6 +301,7 @@ margin-top: 49px;
 .search-form {
 	width: 1200px;
 	height: 217px;
+	background-color: #666b71;
 	background-image: url("../img/background-photo-blur.jpg");
 	background-position: 0 -300px;
 	background-size: 1200px;
@@ -374,6 +370,7 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
+  background-color: #467193;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -386,6 +383,7 @@ margin-top: 49px;
 	top: -2px;
   width: 25px;
   height: 25px;
+  background-color: #467193;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -398,8 +396,8 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
+  background-color: #467193;
   background-image: url("../img/checkbox-off-disabled.png");
-  /*background-color: red; */
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -411,8 +409,8 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
+  background-color: #467193;
   background-image: url("../img/checkbox-on-disabled.png");
-  /*background-color: red; */
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -526,12 +524,10 @@ margin-top: 49px;
   display: block;
   margin: 0 0 0 85px;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -726,6 +722,7 @@ margin-right: 65px;
 .rating-star-4 {
 	width: 142px;
 	height: 27px;
+	background-color: #fefefe;
 	background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
 	background-position: 45px 0, 70px 0, 95px 0, 118px 0;
 	background-repeat: no-repeat;
@@ -735,6 +732,7 @@ margin-right: 65px;
 .rating-star-3 {
 	width: 142px;
 	height: 27px;
+	background-color: #fefefe;
 	background-image: url("../img/star.svg"), url("../img/star.svg"), url("../img/star.svg");
 	background-position: 70px 0, 95px 0, 118px 0;
 	background-repeat: no-repeat;
@@ -744,6 +742,7 @@ margin-right: 65px;
 .rating-star-2 {
 	width: 142px;
 	height: 27px;
+	background-color: #fefefe;
 	background-image: url("../img/star.svg"), url("../img/star.svg");
 	background-position: 95px 0, 118px 0;
 	background-repeat: no-repeat;
@@ -777,8 +776,6 @@ height: 395px;
 text-align: right;
 }
 
-
-
 .check-in-date label {
 	padding-right: 15px;
 }
@@ -786,16 +783,6 @@ text-align: right;
 .check-out-date label {
 	padding-right: 10px;
 }
-
-/*
-.hotel-search-parameters {
-	width: 460px;
-	height: 175px;
-	padding: 0;
-	margin: 55px 55px;
-	outline: dashed 1px red;
-}
-*/
 
 .check-in-date input[type="text"],
 .check-out-date input[type="text"] {
@@ -823,13 +810,13 @@ resize: none;
 	background-color: #ffffff;
 	border: solid 2px #e5e5e5;
 	outline: none;
-	-moz-appearance: none;
 	resize: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
+	
 }
-
-
-
-
 
 .check-in-date {
 display: inline-block;
@@ -914,8 +901,6 @@ border: none;
 resize: none;
 }
 
-
-
 .adults {
 	margin-right: 50px;
 }
@@ -961,14 +946,20 @@ margin-left: 9px;
 .calendar-out:active path {
 	fill: #81b3d2;
 	outline: none;
-	-moz-appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
 }
 
 .calendar-in:focus,
 .calendar-out:focus {
-	border-color: none;
+	border: none;
 	outline: none;
-	-moz-appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
 }
 
 .minus-1:hover,
@@ -984,7 +975,10 @@ margin-left: 9px;
 .plus-2:active {
 	color: #81b3d2;
 	outline: none;
-	-moz-appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
 }
 
 .minus-1:focus,
@@ -992,20 +986,23 @@ margin-left: 9px;
 .plus-1:focus,
 .plus-2:focus {
 	outline: none;
-	-moz-appearance: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
 }
-
 
 .adults input:focus,
 .children input:focus {
 	background-color: #ffffff;
 	border: solid 2px #e5e5e5;
 	outline: none;
-	-moz-appearance: none;
 	resize: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	
 }
-
-
 
 .hotel-search-form .button {
 width: 458px;
@@ -1029,7 +1026,6 @@ background-color: #669ec0;
 color:#88b6d1;
 background-color: #5496bd;
 }
-
 
 .footer-container {
 	display: flex;
