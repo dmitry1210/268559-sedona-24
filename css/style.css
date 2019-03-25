@@ -281,12 +281,13 @@ padding-bottom: 53px;
 }
 
 .button {
-display: inline-block;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .button-search {
-padding: 30px 140px 30px 140px;
-margin-top: 49px;
+	padding: 30px 140px 30px 140px;
+	margin-top: 49px;
 }
 
 .map {
@@ -370,10 +371,10 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
-  background-color: #467193;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off-25.03.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+/*  background-color: #467193; */
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -383,12 +384,27 @@ margin-top: 49px;
 	top: -2px;
   width: 25px;
   height: 25px;
-  background-color: #467193;
+ /* background-color: #467193;*/
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+
+.input[type="checkbox"]:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off-disabled.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+/*  background-color: #467193; */
+}
+
+/*
 .disabled + label::before {
   content: "";
   position: absolute;
@@ -396,12 +412,13 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
-  background-color: #467193;
+ /* background-color: #467193;*//*
   background-image: url("../img/checkbox-off-disabled.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+/*
 .disabled:checked + label::after {
   content: "";
   position: absolute;
@@ -409,11 +426,12 @@ margin-top: 49px;
   top: -2px;
   width: 25px;
   height: 25px;
-  background-color: #467193;
+/*  background-color: #467193;*//*
   background-image: url("../img/checkbox-on-disabled.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+*/
 
 .filter-range {
   width: 317px;
@@ -546,6 +564,7 @@ margin-top: 49px;
 
 .results-sorting span {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .results-found {
@@ -765,15 +784,20 @@ margin-right: 65px;
 }
 
 .modal-search {
-position: absolute;
-background-color: #ffffff;
-background-position: 0 0;
-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.7);
-top: 292px;
-left: 315px;
-width: 570px;
-height: 395px;
-text-align: right;
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	background-position: 0 0;
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.7);
+	top: 292px;
+	left: 315px;
+	width: 570px;
+	height: 395px;
+	text-align: right;
+}
+
+.modal-show {
+	display: block;
 }
 
 .check-in-date label {
@@ -807,6 +831,9 @@ resize: none;
 
 .check-in-date input:focus,
 .check-out-date input:focus {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
 	background-color: #ffffff;
 	border: solid 2px #e5e5e5;
 	outline: none;
@@ -814,12 +841,12 @@ resize: none;
 	-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-	
-	
 }
+
 
 .check-in-date {
 display: inline-block;
+vertical-align: middle;
 font-size: 14px;
 line-height: 26px;
 font-weight: 700;
@@ -942,25 +969,38 @@ margin-left: 9px;
 	fill: #000000;
 }
 
+
 .calendar-in:active path,
 .calendar-out:active path {
 	fill: #81b3d2;
 	outline: none;
 	-webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-	
+  appearance: none;	
+}
+
+.calendar-in:active,
+.calendar-out:active {
+	outline: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;	
 }
 
 .calendar-in:focus,
 .calendar-out:focus {
-	border: none;
+	outline: red;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;	
+}
+
+	/*
 	outline: none;
 	-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-	
-}
+	*/
 
 .minus-1:hover,
 .minus-2:hover,
