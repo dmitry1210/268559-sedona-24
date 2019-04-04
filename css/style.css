@@ -371,10 +371,9 @@ padding-bottom: 53px;
   top: -2px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/checkbox-off-25.03.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-/*  background-color: #467193; */
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -384,25 +383,11 @@ padding-bottom: 53px;
 	top: -2px;
   width: 25px;
   height: 25px;
- /* background-color: #467193;*/
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-
-.input[type="checkbox"]:disabled + label::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: -2px;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/checkbox-off-disabled.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-/*  background-color: #467193; */
-}
 
 /*
 .disabled + label::before {
@@ -819,6 +804,7 @@ font-size: 14px;
 line-height: 26px;
 font-weight: 700;
 color: #000000;
+box-sizing: border-box;
 text-transform: uppercase;
 border: none;
 resize: none;
@@ -924,6 +910,7 @@ font-weight: 700;
 color: #000000;
 text-align: center;
 text-transform: uppercase;
+box-sizing: border-box;
 border: none;
 resize: none;
 }
