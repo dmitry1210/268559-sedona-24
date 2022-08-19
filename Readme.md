@@ -2,6 +2,7 @@
 
 * Студент: [Дмитрий Е](https://up.htmlacademy.ru/htmlcss/24/user/268559).
 * Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
+* Ссылка на проект: https://dmitry1210.github.io/268559-sedona-24/index.html
 
 ---
 
