@@ -1,9 +1,16 @@
-# Личный проект «Седона»
----
+# Sedona
 
-* Студент: [Дмитрий Е](https://up.htmlacademy.ru/htmlcss/24/user/268559).
-* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
-* Ссылка на проект: https://dmitry1210.github.io/268559-sedona-24/index.html
+## A website for hotel search in a small American town
+
+Project details:
+* Stack: HTML5, CSS3, JS
+* Type: Multi-page website
+* Optimization: Desktop only
+
+*Plan to add some interactive behavior (pop-ups, forms, etc.) using JavaScript*
+
+Webpage preview (main):
+
 
 ---
 
