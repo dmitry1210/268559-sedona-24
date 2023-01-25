@@ -1,6 +1,7 @@
 # Sedona
 
-## A website for hotel search in a small American town [github pages](https://dmitry1210.github.io/sedona/index.html/)
+## A website for hotel search in a small American town 
+([web link](https://dmitry1210.github.io/sedona/index.html))
 
 Project details:
 * Stack: HTML5, CSS3, JS
