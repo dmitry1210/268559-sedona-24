@@ -8,7 +8,6 @@ Project details:
 * Type: Multi-page website
 * Optimization: Desktop only
 
-*Plan to add some interactive behavior (pop-ups, forms, etc.) using JavaScript*
 
 ### Webpage preview (main):
 
